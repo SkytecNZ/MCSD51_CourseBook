@@ -1,2 +1,5 @@
-# Node.js dependencies
-node_modules/
+# adding files not to upload to GitHub
+# Ignore node_modules & package-lock.json
+packagelock.json
+node_modules
+.env
