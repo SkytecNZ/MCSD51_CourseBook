@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <%- include('partials/header1.ejs') %>
+  </head>
+  <body>
+    <%- include('partials/navbar1.ejs') %>
+    <div class="container">
+      <h2>New Zealand Members of Parliament 2025</h2>
+
+      <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th style="text-align: left;">Name</th>
+            <th>Party</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% if (MPsdata && MPsdata.length > 0) { %>
+            <% MPsdata.forEach(function(data) { %>
+              <tr>
+                <td><%= data.id %></td>
+                <td><%= data.name %></td>
+                <td><%= data.party %></td>
+              </tr>
+            <% }); %>
+          <% } else { %>
+            <tr>
+              <td colspan="3">No data to display</td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

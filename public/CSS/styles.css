@@ -1,0 +1,43 @@
+h1 {
+  color: red;
+}
+h2 {
+  color: green
+}
+h4 {
+  color: purple
+}
+p {
+  color: #000000;
+}
+
+.img2 {
+  margin-left: 20px;
+  float: right;
+  width: 300px;
+   height: auto;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+ }
+
+ .success {
+  color: green;
+  background-color: #e0ffe0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+  background-color: #ffe0e0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.copyright {
+      font-size: 14px;
+      color: #555;
+      padding: 10px 0;
+    }

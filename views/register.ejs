@@ -1,0 +1,29 @@
+<html>
+  <head>
+      <%- include('partials/header1.ejs') %>
+  </head>
+  <body>
+      <%- include ('partials/navbar1.ejs') %>
+      <div class="container">
+        <h1>Register</h1>
+        <br>
+        <form action="register" method="post">
+          <label for ="username">Username</label>
+          <input type="text" name="username" placeholder="Username" id="username" required>
+          <label for="password">Password</label>
+          <input type="password" name="password" placeholder="Password" id="password" required>
+          <input type="Submit" value="Register">
+        </form> 
+
+        
+
+    <br>
+    <h4>Already have an account? <a href="/login">Login here</a></h4>
+      </div>
+
+      <div class="footer">
+            <%- include('partials/footer.ejs') %> 
+  </div> 
+  </body>
+  
+</html>
