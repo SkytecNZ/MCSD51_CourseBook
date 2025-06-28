@@ -1,34 +1,28 @@
 <!-- Defining Home page -->
 <html>
-    <head>
-      <!-- adding the header elements from header1.ejs -->
-      <%- include ('partials/header1.ejs') %>
-    </head>
-  <body>
+<head>
+  <!-- adding the header elements from header1.ejs -->
+  <%- include('partials/header1.ejs') %>
+</head>
+<body>
   <!-- adding top navigation elements to Home page -->
-      <%- include ('partials/navbar1.ejs') %> 
-      <div class="container">
-      <h2>New Zealand</h2>
-      <img class="img2" src="/public/images/falls.jpg" alt="Bridal Veil Falls">
-      <p>New Zealand is a peaceful country</p>
-      <p><a href="auckland">Auckland</a> is the commercial hub of New Zealnd</p>
-      <p style="color: #23086f;text-align: justify;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.      
-      </p>
-      </div> 
-      <div class="footer">
-            <%- include('partials/footer.ejs') %> 
-      </div> 
+  <%- include('partials/navbar1.ejs') %> 
 
-  </body>
+  <div class="container clearfix">
+    <h2>New Zealand</h2>
+    <img class="img2" src="/public/images/falls.jpg" alt="Bridal Veil Falls">
+    <p>New Zealand is a peaceful country</p>
+    <p><a href="auckland">Auckland</a> is the commercial hub of New Zealnd</p>
+    <p style="color: #23086f; text-align: justify;">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.      
+    </p>
+  </div>
+
+  <div class="footer">
+    <%- include('partials/footer.ejs') %> 
+  </div>
+</body>
 </html>
-
-
-
-
-
-
-

@@ -47,7 +47,7 @@ app.post('/auth', function (req, res) {
           req.session.username = name;
           return res.redirect('/membersonly');
         } else {
-            return res.send(`<h2 style="color:red;">Incorrect Username and/or Password!</h2>
+            return res.send(`<h2 style="color: red;">Incorrect Username and/or Password!</h2>
             <button onclick="history.back()">Back to Login Page</button>`);
           
         }
@@ -63,10 +63,9 @@ app.get('/membersonly', function (req, res) {
   if (req.session.loggedin) {
     return res.render('membersonly');
   } else {
-    return res.send('Please login to view this page!');
+    return res.send('<h3>Please login to view this page!</h3>');
   }
 });
-
 
 
 app.get('/register', (req, res) => {

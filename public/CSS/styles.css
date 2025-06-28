@@ -15,7 +15,7 @@ p {
   margin-left: 20px;
   float: right;
   width: 300px;
-   height: auto;
+  height: auto;
   border-radius: 15px;
   margin-left: 20px;
   margin-bottom: 15px;
@@ -37,7 +37,10 @@ p {
   margin-top: 10px;
 }
 .copyright {
-      font-size: 14px;
-      color: #555;
-      padding: 10px 0;
-    }
+  
+  font-size: 14px;
+  color: #555;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 20px;
+}

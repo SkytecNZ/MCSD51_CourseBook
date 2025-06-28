@@ -1,25 +1,29 @@
 <!-- Defining Beaches page -->
 <html>
-    <head>
-        <!-- adding the header elements from header1.ejs -->
-        <%- include ('partials/header1.ejs') %>
-    </head>
-    <body>
-       <!-- adding top navigation elements from navbar1.ejs -->
-       <%- include ('partials/navbar1.ejs') %>
-      <div class="container">
-          <h2>Beaches</h2>
-          <img class="img2" src="/public/images/beach.jpg" alt="Orewa Beach">
-          <p>Orewa beach is........</p>
-          <p style="color: #23086f; text-align: justify;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.      
-          </p>
-        </div>
-        <div class="footer">
-            <%- include('partials/footer.ejs') %> 
-      </div> 
-    </body>
+  <head>
+    <!-- adding the header elements -->
+    <%- include('partials/header1.ejs') %>
+  </head>
+  <body>
+    <!-- adding top navigation -->
+    <%- include('partials/navbar1.ejs') %>
+
+    <!-- Main Content -->
+    <div class="container clearfix">
+      <h2>Beaches</h2>
+      <img class="img2" src="/public/images/beach.jpg" alt="Orewa Beach">
+      <p>Orewa beach is........</p>
+      <p style="color: #23086f; text-align: justify;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <%- include('partials/footer.ejs') %> 
+    </div>
+  </body>
 </html>
